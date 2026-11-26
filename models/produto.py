@@ -1,9 +1,10 @@
 class Produto:
-    def __init__(self, nome, preco, estoque, categoria):
+    def __init__(self, nome, preco, estoque, categoria, fornecedor):
         self.nome = nome
         self.preco = preco
         self.estoque = int(estoque)
         self.categoria = categoria
+        self.fornecedor = fornecedor
 
 
     def aprensentar(self):
@@ -12,6 +13,7 @@ class Produto:
             f'Preço: R${self.preco}\n'
             f'Estoque: {self.estoque}\n'
             f'Categoria: {self.categoria.nome}\n'
+            f'Fornecedor: {self.fornecedor.nome}\n'
             )
     
     def calcular_valor_estoque(self):
