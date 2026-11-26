@@ -1,5 +1,4 @@
-print("=" * 42)
-print("       SISTEMA COMERCIAL - SISCOM")
-print("=" * 42)
-print("Bem-vindo ao sistema!")
-print("Projeto desvolvido em Python.")
+from models import Produto
+
+produto1= Produto('caderna', 10, 3, 'materiais de papelaria')
+print(produto1.apresentar())
