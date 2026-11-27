@@ -7,7 +7,7 @@ class Produto:
         self.fornecedor = fornecedor
 
 
-    def aprensentar(self):
+    def apresentar(self):
         return (
             f'Produto: {self.nome}\n'
             f'Preço: R${self.preco}\n'
